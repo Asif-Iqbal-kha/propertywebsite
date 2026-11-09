@@ -1,0 +1,13 @@
+node_modules/
+client/dist/
+server/uploads/
+server/.dev-db/
+.vercel
+atlas-credentials*.env
+server/.env
+.env
+*.log
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json

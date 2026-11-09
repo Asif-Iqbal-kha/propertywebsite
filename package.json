@@ -1,0 +1,26 @@
+{
+  "name": "prem-housing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Prem Housing Site Office, Mardan — property website (MongoDB, Express, React, Node)",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c yellow,cyan \"npm run dev -w server\" \"npm run dev -w client\"",
+    "preview:ui": "npm run dev:ui -w client",
+    "build": "npm run build -w client",
+    "start": "npm run start -w server",
+    "seed": "npm run seed -w server",
+    "seed:samples": "npm run seed:samples -w server",
+    "remove:samples": "npm run remove:samples -w server"
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5"
+  }
+}
